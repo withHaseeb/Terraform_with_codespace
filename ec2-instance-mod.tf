@@ -2,7 +2,7 @@ module "ec2_public" {
   source  = "terraform-aws-modules/ec2-instance/aws"
   version = "5.5.0"
 
-  name = "${local.name}-mera-Bastion"
+  name = "${local.name1}-mera-Bastion"
   ami = data.aws_ami.amzlinux2.id
   instance_type          = var.instance-type
   key_name               = var.instance-keypair

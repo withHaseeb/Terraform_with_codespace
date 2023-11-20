@@ -7,7 +7,7 @@ resource "null_resource" "copy_ec2_keys" {
     host = aws_eip.meri_eip.public_ip
     user = "ec2-user"
     password = ""
-    private_key = file("/workspaces/Terraform_with_codespace/VPC-3Tier/key-pair.pem")
+    private_key = file("/workspaces/Terraform_with_codespace/VPC-3Tier/Terraform_with_codespace/key-pair.pem")
     
   }
   provisioner "file" {
